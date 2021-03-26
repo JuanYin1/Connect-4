@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Game.h
- * Author: Drake
- *
- * Created on March 21, 2021, 6:37 PM
- */
-
 #ifndef GAME_H
 #define GAME_H
 
@@ -26,6 +13,7 @@ class Game
         Board board;
         Player player1;
         Player player2;
+	string moves;
         bool gamestate;
         bool oneturn;
 
@@ -40,6 +28,10 @@ class Game
         void start();
         //checks win condition
         int win();
+
+	string getMoves();
+
+	void addMove(char move);
 };
 
 
